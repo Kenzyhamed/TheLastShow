@@ -1,0 +1,328 @@
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
+  max-height: 100vh;
+  color: #333;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: #eee;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(215, 215, 215);
+}
+button,
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+
+#container {
+
+  background:rgb(255, 255, 255,0.8);
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  justify-content: center;
+
+  
+
+
+
+
+}
+
+#menu-button {
+  padding: 0 10px;
+  font-size: 0.8em;
+
+}
+button:hover,
+.button:hover {
+  background-color: #b4b3b8;
+  color: white;
+  cursor: pointer;
+}
+#app-header {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+#main-container {
+  display: flex;
+  flex: 1;
+}
+#write-box {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+#sidebar {
+  flex: 0 1 20%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #eee;
+}
+#notes-holder {
+  flex: 1;
+  overflow-y: auto;
+}
+#notes-holder > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#sidebar header {
+  display: flex;
+  flex-direction: column;
+}
+#sidebar header h2 {
+  padding: 10px 16px;
+}
+#filter {
+  padding: 10px;
+}
+.note-item {
+  display: inline;
+  justify-content: center;
+  flex-direction: column;
+  border: 0.5px solid #d8d4d4;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px -2px rgb(180, 180, 180);
+
+
+}
+
+
+
+#empty-holder {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: rgb(222, 217, 217);
+}
+
+#note-info {
+  flex: 1;
+}
+#note-info input {
+  display: block;
+}
+#note-controls {
+  flex: 0 1 140px;
+  display: flex;
+  justify-content: flex-end;
+}
+#note-controls a {
+  padding: 4px 8px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#note-controls a:hover {
+  border-color: #444;
+}
+
+#new-note-button {
+  flex: 0 1 10%;
+  font-size: 1em;
+}
+
+
+.ql-editor {
+  font-size: 1.2em !important;
+}
+
+.hidden {
+  visibility: hidden ;
+}
+#create-obituary{
+  background-color:#30D5C8;
+  border-radius: 10px;
+  padding: 20px 300px 20px 300px;
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
+  width: 100%;
+  
+}
+#create-obituary:hover{
+  background-color: #444;
+}
+#write{
+  width:50%;
+  justify-content: center;
+  vertical-align: middle;
+
+  margin: 0;
+  position: absolute;
+  bottom: 25%;
+  left:25%;
+
+
+
+}
+#decoration{
+  width: 300px; 
+  height: 30px; 
+  object-fit: cover;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#name{
+  width: 100%;
+  padding: 17px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  font-size: 15px;
+
+  
+}
+#image-select{
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+
+
+}
+
+#image-select:hover{
+  text-decoration: underline;
+}
+
+#create-title{
+  text-align: center;
+}
+
+#born, #died{
+  padding: 30px;
+  font-size:15px;
+  text-align: center;
+}
+#date{
+  text-align: center;
+}
+
+
+
+header {
+  display: flex;
+  border-bottom: 1px solid #eee;
+
+
+}
+header aside {
+  flex: 0 1 8%;
+  display: flex;
+  justify-content: center; 
+  width: 100%; 
+
+
+}
+
+
+.opaque{
+  opacity: 0.1;
+}
+
+.noHover{
+  pointer-events: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.box {
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+}
+
+.note-when {
+  color: #000000;
+  font-size: 0.7em;
+  margin-top: 4px;
+  display: inline;
+  text-align: center;
+
+}
+
+#photo{
+  width: 250px;
+  max-height: 300px;
+  
+}
+
+#date-obituary{
+  text-align:center;
+  font-size: 0.5em;
+  font-family: 'Monaco';
+}
+#note-title {
+  font-size: 1em;
+  text-align: center;
+  font-family: 'Monaco';
+}
+
+#sound{
+  border-radius: 90px;
+  width: 20px;
+  margin:auto;
+  height: 20px;
+  padding:10px;
+  border: 1px solid rgb(0, 0, 0);
+  text-align:center;
+}
+#sound:hover{
+  background-color: #333;
+  color: azure;
+}
+
+#close{
+  position: absolute;
+  right:0;
+  top:0;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+#body{
+  font-family: 'Roboto', sans-serif;
+  text-align:center;
+}
+
